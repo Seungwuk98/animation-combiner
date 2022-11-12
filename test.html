@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./three.js/build/three.module.js",
+                    "three/addons/": "./three.js/examples/jsm/"
+                }
+            }
+        </script>
+        <script src="./combineviwer.js" type="module"></script>
+        <script src="./showAvatar.js" type="module"></script>
+        <script src="./combineAnimation.js" type="module"></script>
+        <script src="./exportAvatar.js" type="module"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <label class="absolute w-60 h-12 top-5 left-10 text-white block bg-slate-800 hover:bg-slate-700 rounded-full flex flex-col items-center justify-center">
+            select your avatar (.fbx)
+            <input id="avatar" type="file" class="hidden"/>
+        </label>
+        <label class="absolute w-60 h-12 top-20 left-10 text-white block bg-slate-800 hover:bg-slate-700 rounded-full flex flex-col items-center justify-center">
+            select your animation (.fbx)
+            <input id="animation" type="file" class="hidden"/>
+        </label>
+        <label id="extract_gltf" class="absolute w-60 h-12 top-48 left-10 text-white block bg-slate-800 hover:bg-slate-700 rounded-full flex flex-col items-center justify-center">
+            extract your avatar (.gltf)
+        </label>
+    </body>
+</html>
