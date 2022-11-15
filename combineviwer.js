@@ -63,6 +63,7 @@ class CombiningLoad {
 
     _extractAnimation(object) {
         object.animations.forEach((value) => {
+            console.log(value);
             this._animationDict.push(this._mixer.clipAction(value))
         });
         this._refreshGUI();
