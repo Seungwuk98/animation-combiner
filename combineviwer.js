@@ -148,7 +148,7 @@ class CombiningLoad {
                     child.receiveShadow = true;
                 }
                 if (child instanceof THREE.Bone) {
-                    child.name = child.name.replace(/^mixamorig12|^mixamorig1|^mixamorig2/, 'mixamorig')
+                    child.name = child.name.replace(/^mixamorig12|^mixamorig11|^mixamorig1|^mixamorig2/, 'mixamorig')
                 }
             });
         });
